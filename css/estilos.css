@@ -1,0 +1,273 @@
+@import url(normalize.css);
+body{
+	background-color: #9dbdbe;
+}
+
+@font-face {
+    font-family: 'exo';
+    src: url('../fonts/exo-medium-italic-webfont.eot');
+    src: url('../fonts/exo-medium-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/exo-medium-italic-webfont.woff') format('woff'),
+         url('../fonts/exo-medium-italic-webfont.ttf') format('truetype'),
+         url('../fonts/exo-medium-italic-webfont.svg#exomedium_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+h1, h2, h3, h4, p{font-family: 'exo', helvetica, arial;
+	font-style: italic;}
+h1{}
+h2{ font-size: 16px;
+	font-weight: 400;}
+
+h3{ font-size: 65px;
+	font-weight: 400;
+	text-transform: uppercase;}	
+p, ol.lista li{ font-size: 12px; 
+	font-weight: normal;
+	color: #5d9191;}	
+
+
+.wrapp{
+	max-width: 978px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+#home, #about, #gallery, #contact{
+	width: 100%;
+}
+
+/*--------------------HEADER------------------*/
+header{
+	width: 100%;
+	background-color: rgba(255, 255, 255, .1);
+	margin-top:20px;
+	background-image: -webkit-linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, .2) 40px, transparent 40px, transparent);
+	background-image: -moz-linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, .2) 40px, transparent 40px, transparent);
+}
+header h1 img{
+}
+header h1, header h2, header h3{ color: white;
+	text-shadow:1px 1px 4px 	#5d9191;} 
+
+header h2{ text-align: center;
+	text-transform: uppercase;}
+
+#logo, #menu{display: inline-block; 
+	vertical-align: top;
+	}
+#logo{ width: 30%; padding: 10px 0;}	
+#menu{ width: 65%;margin-left: 25px;}
+#social{ width: 100%;
+	height: 44px;
+	text-align: right;
+	padding-top: 4px;}
+
+#inlink, #tweetr, #face{ display: inline-block;
+	width: 32px; height: 32px;
+	background-color: white;
+	border-radius: 8px;
+	opacity: .2;
+	margin-left: 8px;
+	-webkit-transition: background-position .5s, opacity 1s ease .2s;}
+
+#inlink:hover, #tweetr:hover, #face:hover{ background-position: top center;
+	opacity: 1;}
+
+#inlink{ background: url(../img/icon_linkedin.png) no-repeat bottom center; }
+#tweetr{background: url(../img/icon_twitter.png) no-repeat bottom center;}
+#face{background: url(../img/icon_facebook.png) no-repeat bottom center;}	
+
+#social input{ display: inline-block; 
+	vertical-align:top;
+	margin-left: 8px;
+	height: 24px;
+	width: 126px;
+	box-shadow: 1px 1px 4px #86a8a8;
+	border:none;
+	margin-top: 3px;
+	outline: none;
+	padding: 1px 5px;
+	color: #86a8a8;
+}
+
+#social input::-webkit-input-placeholder{color:#86a8a8;}
+#social input::-moz-input-placeholder{color:#86a8a8;} 
+
+ul{ list-style: none; padding: 0; margin: 0;}
+nav{ text-align: right; min-height: 40px;width: 100%;}
+nav > li{ display:inline-block; vertical-align: top;}
+nav li > a{ display: block;
+	letter-spacing:1px;
+	text-transform: uppercase;
+	font-family: helvetica;
+	font-size: 13px;
+	font-weight: bold;
+	margin-left: 15px; 
+	width:138px;
+	padding: 12px 0;
+	background-color: white;
+	color: #86a8a8;
+	text-decoration: none;
+	text-align: center;
+	box-shadow: 1px 1px 4px #86a8a8;
+	border-radius: 4px;
+	-webkit-transition:all .5s;
+	position: relative;}
+
+nav li:hover > a{ color:white; background-color:#86a8a8;}
+
+nav li a ul{ position: absolute; left: 0; top: 0; width: 300px; }
+
+nav li a ul li{ display: block; }
+
+nav li ul li a{ border-radius:0; font-size: 11px; display: none; -webkit-transition: opacity 5s ease 1s; }
+
+nav li:hover ul li a{ display: block; }
+
+/*----------------------------------------*/
+
+/*--------------------HOME------------------*/
+#home{ padding: 20px 0;}
+
+#slider, aside{display: inline-block;vertical-align: top;}
+#slider img{ border:5px solid white;box-shadow: 1px 1px 4px #86a8a8;}
+.gif{ border:5px solid white;box-shadow: 1px 1px 4px #86a8a8;}
+aside{ width: 238px; overflow: hidden;}
+/*------------------------------------------*/
+
+/*--------------------ABOUT------------------*/
+#about{
+	background-color: #fff;
+	overflow: hidden;
+}
+#about h3, #about h4{color: #5d9191;}
+#about p{-webkit-column-count:3;}
+/*------------------------------------------*/
+
+/*--------------------GALLERY------------------*/
+#gallery{
+	background: url(../img/patterns/bg_gallery.png) #90b5c5;
+	font-size: 0;
+}
+#gallery section.wrapp{ padding: 20px 0;}
+
+#gallery a{ display: inline-block; width: 32.5%; min-width: 310px;
+border:2px solid white;box-shadow: 1px 1px 4px #86a8a8;}
+/*------------------------------------------*/
+
+/*--------------------FOOTER------------------*/
+
+footer{	background: url(../img/patterns/bg_footer.png) #90b5c5;
+border-top:10px solid white;
+padding: 18px 0;
+position: relative;}
+
+footer:after{content:"";
+width:100%; position:absolute; top: 5px;
+border-top: 2px solid white;}
+
+footer form{
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+footer form label{
+	display: block;	
+}
+
+footer aside{
+	width: 70%;
+	display: inline-block;
+	vertical-align: top;
+}
+footer aside #info{
+	width: 50%;
+	vertical-align: top;
+	display: inline-block;
+}
+
+footer aside #mapa{
+	width: 50%;
+	height: 300px;
+	vertical-align: top;
+	display: inline-block;
+	background: white;
+}
+/*------------------------------------------*/
+/*-------------MEJORAR ASPECTO-------------------*/
+@media screen and (max-width: 975px){
+	#logo, #menu{
+		width: 100%;
+		text-align: center;
+	}
+	#menu, nav, #social{
+		text-align: center;
+	}
+	#slider{
+		width: 70%;
+	}
+	#slider img, #home aside img{
+		width: 100%;
+	}
+	#home aside{
+		width: 28%;
+		margin-left: 1%;
+	}
+	#gallery{
+		text-align: center;
+	}
+}
+/*-------------RESPONSIVE-------------------*/
+@media screen and (max-width: 768px){
+	#logo, #menu{
+		width: 100%;
+		margin: 0;
+	}
+	#logo, #social, nav, header h3{
+		text-align: center;
+	}
+	#slider{
+		width: 100%;
+	}
+	#slider img{
+		width: 100%;
+	}
+	#home aside{
+		display: none;
+	}
+	#about h3{
+		font-size: 50px;
+	}
+	#about p{-webkit-column-count:2;}
+
+	footer form, footer aside{
+		width: 80%;
+		margin-left: 10%;
+	} 
+	#gallery{
+		text-align: center;
+	}
+}
+@media screen and (max-width: 480px){
+	#social{
+		display: none;
+	}
+	nav li a{
+		margin-left: 0;
+		width: 180px;
+		margin-bottom: 3px;
+	}
+	#about p{-webkit-column-count:1;}
+}
+@media screen and (max-width: 320px){
+	#logo img{
+		width: 80%;
+	}
+	header h3{
+		font-size: 40px;
+	}
+	#jquery-overlay{
+		display: none;
+	}
+}
